@@ -1,0 +1,53 @@
+{
+  "manifest": {
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "uri": "arn:aws:lambda:us-east-1:339713181971:function:06034d7f-e456-4394-a990-791d817c7a57:Release_0"
+        },
+        "interfaces": [],
+        "locales": {},
+        "regions": {
+          "NA": {
+            "endpoint": {
+              "uri": "arn:aws:lambda:us-east-1:339713181971:function:06034d7f-e456-4394-a990-791d817c7a57:Release_0"
+            }
+          },
+          "EU": {
+            "endpoint": {
+              "uri": "arn:aws:lambda:eu-west-1:339713181971:function:06034d7f-e456-4394-a990-791d817c7a57:Release_0"
+            }
+          },
+          "FE": {
+            "endpoint": {
+              "uri": "arn:aws:lambda:us-west-2:339713181971:function:06034d7f-e456-4394-a990-791d817c7a57:Release_0"
+            }
+          }
+        }
+      }
+    },
+    "manifestVersion": "1.0",
+    "publishingInformation": {
+      "category": "KNOWLEDGE_AND_TRIVIA",
+      "distributionCountries": [],
+      "isAvailableWorldwide": true,
+      "locales": {
+        "en-US": {
+          "name": "conversor de unidades"
+        },
+        "es-MX": {
+          "description": "Sample Full Description",
+          "examplePhrases": [
+            "Alexa abre hola mundo",
+            "hola",
+            "ayuda"
+          ],
+          "keywords": [],
+          "name": "conversor de unidades",
+          "summary": "Sample Short Description"
+        }
+      },
+      "testingInstructions": "Sample Testing Instructions."
+    }
+  }
+}

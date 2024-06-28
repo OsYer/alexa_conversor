@@ -1,0 +1,87 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "slots": [
+            {
+              "name": "cantidad",
+              "type": "AMAZON.NUMBER"
+            },
+            {
+              "name": "unidadOrigen",
+              "type": "UNIT_TYPE"
+            },
+            {
+              "name": "unidadDestino",
+              "type": "UNIT_TYPE"
+            }
+          ],
+          "name": "ConvertUnitsIntent",
+          "samples": [
+            "convert {cantidad} {unidadOrigen} to {unidadDestino}",
+            "how many {unidadDestino} in {cantidad} {unidadOrigen}",
+            "convert {cantidad} {unidadOrigen} into {unidadDestino}",
+            "change {cantidad} {unidadOrigen} to {unidadDestino}",
+            "transform {cantidad} {unidadOrigen} to {unidadDestino}"
+          ]
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "name": {
+                "synonyms": [
+                  "yard",
+                  "yd"
+                ],
+                "value": "yards"
+              }
+            },
+            {
+              "name": {
+                "synonyms": [
+                  "inch",
+                  "in"
+                ],
+                "value": "inches"
+              }
+            },
+            {
+              "name": {
+                "synonyms": [
+                  "foot",
+                  "ft"
+                ],
+                "value": "feet"
+              }
+            }
+          ],
+          "name": "UNIT_TYPE"
+        }
+      ],
+      "invocationName": "yerena converter"
+    }
+  }
+}
